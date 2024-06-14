@@ -1,0 +1,12 @@
+Algoritmo calificacionesNotables
+	Escribir 'Este programa tiene como proposito determinar las calificaciones notables de una lista de numeros'
+	notables <- 0
+	Repetir
+		Escribir 'Porfavor inserte una de las calificaciones a comparar, para parar la lista porfavor inserte un numero menor a 1'
+		Leer n
+		Si n>=7 Y n<=9 Entonces
+			notables <- notables+1
+		FinSi
+	Hasta Que n<1
+	Escribir 'el numero de alumnos con calificación notable es ',notables
+FinAlgoritmo

@@ -1,0 +1,22 @@
+Algoritmo determinarSumas
+	Escribir "Este programa tiene como finalidad determinar si un numero es la suma de otros dos"
+	Escribir "Porfavor inserte el primer numero"
+	Leer n1
+	Escribir "Porfavor inserte el segundo numero"
+	Leer n2
+	Escribir "Porfavor inserte el tercer numero"
+	Leer n3
+	Si n1+n2=n3 Entonces
+		Escribir "El tercer numero es igual a la suma del primer y segundo numero"
+	SiNo
+		Si n1+n3=n2 Entonces
+			Escribir "El segundo numero es igual a la suma del primero y del tercer numero"
+		SiNo
+			Si n2+n3=n1 Entonces
+				Escribir "El primer numero es igual a la suma del segundo y tercer numero"
+			SiNo
+				Escribir "Ninguno de los numeros ingresados es igual a la suma de dos de ellos"
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo

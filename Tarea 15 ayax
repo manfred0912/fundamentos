@@ -1,0 +1,66 @@
+/*Hacer 1 programa con 4 funciones con paso de parámetros y el programa principal*/
+
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h> 
+#include <string.h>
+
+// Declaración de constantes
+
+#define centimetro 100.00
+#define kilometro 0.001
+#define pulgada 39.37
+#define pie 3.281
+ 
+float convertir_metro_centimetro(float metro )
+{
+	return (metro/centimetro);
+}
+float  convertir_metro_kilometro(float metro )
+{
+	return (metro/kilometro);
+}
+float  convertir_metro_pulgada(float metro )
+{
+	return (metro/pulgada);
+}
+float convertir_metro_pie(float metro )
+{
+	return (metro/pie);
+}
+main()
+{
+int opc;
+int metro;
+do
+{
+	printf("A que unidad de medida deseas convertir el metro?\n");
+	printf("\n1 Centimetro");
+	printf("\n2 Kilometro");
+	printf("\n3 Pulgada");
+	printf("\n4 Pie\n");
+	scanf("%d",&opc);
+	printf("Que cantidad de metros deseas convertir? ");
+	scanf("%f",&metro);
+	switch(opc)
+	{
+case 1: printf("%.3f metros equivalen a %.3f centimetros ", metro, convertir_metro_centimetro);
+break;
+case 2: printf("%.3f metros equivalen a %.3f kilometros", metro, convertir_metro_kilometro);
+break;
+case 3: printf("%.3f metros equivalen a %.3f pulgadas ", metro, convertir_metro_pulgada);
+break;
+case 4: printf("%.3f metros equivalen a %.3f pies ", metro, convertir_metro_pie);
+break;
+
+	default: printf("No se puede convertir a esa unidad de medida");
+	}
+printf("\nDeseas repetir el programa Si = 1 y No =2");
+scanf ("%d",&opc);
+} while (opc== 1);
+getch();
+}
+
+
+
+

@@ -1,0 +1,15 @@
+Algoritmo calcularMedia
+	contador <- 0
+	acumulador <- 0
+	Escribir 'Este programa sirve para calcular la media de una secuencia de numeros cuya introduccion de datos termina al ingresar el numero 0'
+	Repetir
+		Escribir 'Porfavor inserte un numero'
+		Leer n
+		Si n!=0 Entonces
+			contador <- contador+1
+			acumulador <- acumulador+n
+		FinSi
+	Hasta Que n=0
+	resul = acumulador/contador
+	Escribir "La media es " resul
+FinAlgoritmo
